@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DRIFTY | CURRENTS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/Logo.png" style="height: 192px; width: 192px;">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.ripples.js"></script>
+    <!-- <script src="video.js"></script> -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- <script src="search.js"></script> -->
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-circle"></div>
+    </div>
+    <div class="header">
+        <div class="ripple-container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="travel.html"><img alt="" src="img/logo.png" style="height: 100px; width: 100px;"/></a>
+                    <h2>Drifty Currents</h2>
+                </div>
+                <div class="hamburger" onclick="toggleNav()">
+                    <div>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="nav-links" id="nav">
+                    <a href="travel.html">Home</a>
+                    <div class="dropdown">
+                        <a href="#">Destinations<i class="fas fa-chevron-down" style="margin-left: 5px;"></i></a>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <a href="destinations.html">Destinations</a>
+                                <a href="eiffeltower.html">Destination Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Tours</a>
+                        <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <a href="tours.html">Tours</a>
+                                <a href="santorini.html">Tour Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Pages</a>
+                        <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <a href="about.html">About Us</a>
+                                <a href="booking.html">Booking Process</a>
+                                <a href="guide.html">Tour Guide</a>
+                                <a href="gallery.html">Gallery</a>
+                                <a href="login.html">Sign In</a>
+                                <a href="signup.html">Sign Up</a>
+                                <a href="faq.html">FAQ's</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacts.html">Contacts</a>
+                </div>
+                <div class="search-contact">
+                    <i class="fas fa-search" style="cursor: pointer;" onclick="toggleInputField()"></i>
+                    <a href="login.html"><i class="fas fa-user-circle" style="position: relative; left: 10px; bottom: 1px; cursor: pointer;" onclick="toggleSearchbar()"></i></a>
+                    <div class="contact-number">+234 (123) 985 789</div>
+                    <div class="input-field" id="input-area" style="display: none;">
+                        <input type="text" placeholder="Search...">
+                        <button class="searchh-button" type="button">
+                            <i class="fas fa-search" style="color: #00bcd4;"></i> <!-- Font Awesome search icon -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <p>LET'S TRAVEL THE WORLD TOGETHER</p>
+                <h1>Travel Top Destination of The World</h1>
+                <div class="search-bar">
+                    <input placeholder="Where to?" disabled style="background-color: white;"/>
+                    <select>
+                        <option>Destination</option>
+                        <option>The Eiffel Tower</option>
+                        <option>The pryde-mountains</option>
+                        <option>The Taj Mahal</option>
+                        <option>The Tonkwen Temple</option>
+                        <option>Lao lading</option>
+                    </select>
+                    <select>
+                        <option>Guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                    </select>
+                    <button><i class="fas fa-search"></i> Find Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="images">
+            <div class="label">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Paradise on Earth</span>
+            </div>
+            <img alt="" height="500" class="img1" src="img/sailing (1).jpg" width="500"/>
+            <img alt="" height="450" class="img2" src="img/eiffel tower.jpg" style="position: absolute; top: 20%; left: 23%; border: 18px solid white;" width="300"/>
+        </div>
+        <div class="content">
+            <h2>ABOUT US</h2>
+            <h1>We are Professional Planners For Your Trips</h1>
+            <p>Expertly Crafted Journeys, Unforgettable Memories. Travel with Ease, Leave the Planning to Us.</p>
+            <a href="tel:+1546378654">Speak to our Destination Experts at Direct Call +1 546 378 654</a>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> All places and activities are carefully picked by us.</li>
+                <li><i class="fas fa-check-circle"></i> 98% Course Completion Rates</li>
+                <li><i class="fas fa-check-circle"></i> We are an award winning agency</li>
+                <li><i class="fas fa-check-circle"></i> Trusted by more than 80,000 customers</li>
+            </ul>
+        </div>
+    </div>
+    <a href="about.html"><button class="read">Read more <i class="fas fa-arrow-right"></i></button></a>
+
+    <section class="why-travel-section">
+        <div class="container">
+            <h2 class="section-title">Why Travel with Us?</h2>
+            <div class="service">
+                <i class="fas fa-smile"></i>
+                <h3>Customer Delight</h3>
+                <p>We deliver personalized experiences, real-time support, and proactive engagement with loads of benefits.</p>
+                <button class="details-button" onclick="toggleDetails('details1')">Details...</button>
+                <div id="details1" class="details">
+                    <p>- Personalized travel recommendations <br>- Real-time booking support <br>- Travel planning tools <br>- Flight and hotel alerts <br>- 24/7 emergency support</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Trusted Adventure</h3>
+                <p>We deliver unique experiences in outdoor, water, cultural, nature, and package tours. Come make memories.</p>
+                <button class="details-button" onclick="toggleDetails('details2')">Details...</button>
+                <div id="details2" class="details">
+                    <p>- Safety Protocols and Emergency Response Plans <br>- Customizable Itineraries <br>- Authentic Local Experiences and Immersive Activities <br>- Environmental Sustainability and Responsible Tourism Practices</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fas fa-mountain"></i>
+                <h3>Expert Guides</h3>
+                <p>Our Expert Guides Services offer travelers personalized experiences led by verified, certified, and local experts.</p>
+                <button class="details-button" onclick="toggleDetails('details3')">Details...</button>
+                <div id="details3" class="details">
+                    <p>- Verified and Certified Guides <br>- Local Experts with In-Depth Knowledge <br>- Customizable Tours and Itineraries <br>- Real-Time Communication and Support <br>- Multilingual Guides (optional)</p>
+                </div>
+            </div>
+            <div class="service">
+                <i class="fas fa-clock"></i>
+                <h3>Time Flexibility</h3>
+                <p>Our Time Flexibility Services allow travelers to customize their itineraries with flexible booking options.</p>
+                <button class="details-button" onclick="toggleDetails('details4')">Details...</button>
+                <div id="details4" class="details">
+                    <p>- Flexible Booking and Cancellation Policies <br>- Customizable Itineraries <br>- Real-Time Booking and Scheduling <br>- Last-Minute Booking Options <br>- 24/7 Customer Support</p>
+                </div>
+            </div>
+        </div>
+        <a href="service.html"><button class="next">Read More <i class="fas fa-arrow-right"></i></button></a>
+    </section>
+
+    <div class="tours">
+        <h2>CHOOSE YOUR PACKAGE</h2>
+        <h1>Popular Tours Packages</h1>
+        <div class="packages">
+            <div class="card">
+                <img alt="Person with a backpack standing on a rock in the water with a large rock formation in the background" height="400" src="https://storage.googleapis.com/a1aa/image/ME4hfVa44v1dSimjLTiBES74I3fFZPenxZw6fMrVSHUv0AROB.jpg" width="300"/>
+                <div class="card-content">
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Paris</p>
+                        <i class="fas fa-clock" style="margin-left: 10px;"></i>
+                        <p>07 Days</p>
+                        <i class="fas fa-star" style="margin-left: 10px;"></i>
+                        <p>4K+ Rating</p>
+                    </div>
+                    <h3>Aegean Adventure</h3>
+                    <a class="btn" href="#">Book Now</a>
+                    <p class="price">$390</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Person with a hat and yellow backpack standing on a beach with arms raised, facing a large rock formation" height="400" src="https://storage.googleapis.com/a1aa/image/iECP2CQTkFrbPxxdKSp7yvh76freJQxNEjvCePaID1QOagInA.jpg" width="300"/>
+                <div class="card-content">
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Paris</p>
+                        <i class="fas fa-clock" style="margin-left: 10px;"></i>
+                        <p>07 Days</p>
+                        <i class="fas fa-star" style="margin-left: 10px;"></i>
+                        <p>4K+ Rating</p>
+                    </div>
+                    <h3>Aegean Adventure</h3>
+                    <a class="btn" href="#">Book Now</a>
+                    <p class="price">$390</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Eiffel Tower with cloudy sky in the background" height="400" src="https://storage.googleapis.com/a1aa/image/f0LGOriEONXADCH0kZp0Xss5jAlMgg2SofzX8ctxtqeSagInA.jpg" width="300"/>
+                <div class="card-content">
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Paris</p>
+                        <i class="fas fa-clock" style="margin-left: 10px;"></i>
+                        <p>07 Days</p>
+                        <i class="fas fa-star" style="margin-left: 10px;"></i>
+                        <p>4K+ Rating</p>
+                    </div>
+                    <h3>Aegean Adventure</h3>
+                    <a class="btn" href="#">Book Now</a>
+                    <p class="price">$390</p>
+                </div>
+            </div>
+            <div class="card">
+                <img alt="Person jumping off a boat into the water with a sailboat in the background" height="400" src="https://storage.googleapis.com/a1aa/image/Tj57v6lmCd4sLVelsxbZafoviRGUual8QTkzpeg6YDXQagInA.jpg" width="300"/>
+                <div class="card-content">
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Paris</p>
+                        <i class="fas fa-clock" style="margin-left: 10px;"></i>
+                        <p>07 Days</p>
+                        <i class="fas fa-star" style="margin-left: 10px;"></i>
+                        <p>4K+ Rating</p>
+                    </div>
+                    <h3>Aegean Adventure</h3>
+                    <a class="btn" href="#">Book Now</a>
+                    <p class="price">$390</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="packages">
+        <div class="package-content">
+            <div class="image-section">
+                <img alt="A happy traveler sitting on a suitcase with a backpack and holding a passport" height="500" src="https://storage.googleapis.com/a1aa/image/npfODwf8AlhGUUeXEMTG7YR0oLDTdffJFQQFvQvYQjUyfli5E.jpg" width="500"/>
+            </div>
+            <div class="text-section">
+                <h2>TRAVEL POINT</h2>
+                <h1>Discover The World With Our Guide</h1>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>218+</h3>
+                        <p>Holiday Packages</p>
+                    </div>
+                    <div class="stat">
+                        <h3>041+</h3>
+                        <p>Luxury Hotels</p>
+                    </div>
+                    <div class="stat">
+                        <h3>00k</h3>
+                        <p>Premium Airlines</p>
+                    </div>
+                    <div class="stat">
+                        <h3>0k+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="gallery.html"><button class="floating-button"><i class="fas fa-camera"></i></button></a>
+    </div>
+
+    <div class="trips">
+        <div class="trip">
+            <h2>POPULAR DESTINATION</h2>
+            <h1>Popular Destinations</h1>
+        </div>
+        <div class="destinations">
+            <div class="box">
+                <a href="eiffeltower.html"><img alt="Eiffel Tower with a couple in Paris" height="200" src="https://storage.googleapis.com/a1aa/image/ud51fPr3SCWUGCnbAfYgIpWdfPTevdQefFtuQvaEGwF23vi5E.jpg" width="300"/></a>
+                <div class="info">
+                    <h3>Eiffel Tower</h3>
+                    <p>Paris, 24 Trips</p>
+                </div>
+            </div>
+            <div class="box pryde-mountains">
+                <a href="thepryde.html"><img alt="Pryde Mountains in Prydelands" height="200" src="https://storage.googleapis.com/a1aa/image/brUJ4IeHWkyXZqBRDokV4eIYef3lEbPZwmRV1xXXfhgf4vi5E.jpg" width="620"/></a>
+                <div class="info">
+                    <h3>Pryde Mountains</h3>
+                    <p>Prydelands, 100 Trips</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="lao.html"><img alt="Lao Lading Island in Krabal" height="200" src="https://storage.googleapis.com/a1aa/image/gS6EtSRzewzWFCyN70r3ASBafRyuwYFgFZmR0LOuEtjkfVMnA.jpg" width="300"/></a>
+                <div class="info">
+                    <h3>Lao Lading Island</h3>
+                    <p>Krabal, 12 Trips</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="tonkwen.html"><img alt="Ton Kwen Temple in Thailand" height="200" src="https://storage.googleapis.com/a1aa/image/WG0pZjIfhMxvBSQVte11zygtJmv4sYBw9VyUVW3sUf7AfrYOB.jpg" width="300"/></a>
+                <div class="info">
+                    <h3>Ton Kwen Temple</h3>
+                    <p>Thailand, 20 Trips</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="taj.html"><img alt="Taj Mahal in Thailand" height="200" src="https://storage.googleapis.com/a1aa/image/guUxJACe2232M6AoeiaNeSTnGC8ysvefIqyNlkWNP4AX8XxcC.jpg" width="300"/></a>
+                <div class="info">
+                    <h3>Taj Mahal</h3>
+                    <p>Thailand, 50 Trips</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="inside">
+            <h1>A Truly Wonderful <br> Experience</h1>
+            <p>Brilliant for anyone looking to get away from the hustle <br>and bustle of city life or detox from their tech for a few <br>days. I could have stayed another week!</p>
+            <p>They really have thought about everything here down <br> to the finest details.</p>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="date">01 Jan 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="how">
+        <div class="how-header">
+            <h2>HOW IT WORKS</h2>
+            <h1>Getting Started? It's Simple</h1>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">01</div>
+                <img alt="Person standing on a mountain with a backpack" height="200" src="https://storage.googleapis.com/a1aa/image/LeEhlnsJdMzWPKKazS1VtvWwdPIesuyc18MzbdV7mYsMeBNnA.jpg" width="200"/>
+                <div class="step-title">Get Travel Insurance</div>
+            </div>
+            <div class="arrow arrow-left"><i class="fas fa-arrow-right"></i></div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <img alt="Person snorkeling underwater" height="200" src="https://storage.googleapis.com/a1aa/image/1QtYrYS4RyqBLx35ovJYc9GR1dUfNrPQuY8GTOIOrIfKeBNnA.jpg" width="200"/>
+                <div class="step-title">Compare &amp; Book</div>
+            </div>
+            <div class="arrow arrow-right"><i class="fas fa-arrow-right"></i></div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <img alt="Scenic view of boats on a beach" height="200" src="https://storage.googleapis.com/a1aa/image/KHQXJIlwoM4tHt5OnmlKD4WX8ahWe39wNNrpCeExMCqNeBNnA.jpg" width="200"/>
+                <div class="step-title">Book a Room</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video">
+        <div class="vid-container">
+            <video id="myVideo" width="1000" height="600" style="display: none;">
+                <source src="vid/WhatsApp Video 2024-10-04 at 10.37.01_e6123498.mp4" type="video/mp4" controls>
+            </video>
+            <img alt="Aerial view of a tropical resort with lush greenery and surrounding ocean" height="600" src="https://storage.googleapis.com/a1aa/image/8a56moEYxrbvMNIeHsuNFmmpaVs2I67vSFvfsIBBYTGlmhmTA.jpg" width="1000" class="video-thumbnail"/>
+            <div class="location-text"><i class="fas fa-map-marker-alt"></i> Location Mountain Strait, Any State</div>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+    </div>
+
+    <div class="logos-container">
+        <div class="logos">
+            <img alt="attentive logo" height="50" src="https://storage.googleapis.com/a1aa/image/1D3Nteyz3wVTMSAfy6DeeZzfkFEg4EfMqKimyfTmZjf1AVimTA.jpg" width="100"/>
+            <img alt="DocuSign logo" height="50" src="https://storage.googleapis.com/a1aa/image/olngYWzYzCL1MNt2UcT4yZd635ZKSene0egzhr5eZjf7oS0cC.jpg" width="100"/>
+            <img alt="afterpay logo" height="50" src="https://storage.googleapis.com/a1aa/image/9Y32mZBQXNroKBF3RKde8X9g1GFMNYysMnuWJTvekFhBVimTA.jpg" width="100"/>
+            <img alt="Framer logo" height="50" src="https://storage.googleapis.com/a1aa/image/XQpz8eB0CrTMR65eYy4KUGYORcxsRh5Jy2O5dho5zpmGVimTA.jpg" width="100"/>
+        </div>
+    </div>    
+        <div class="post-content">
+            <div class="post">
+                <img alt="Child swimming underwater" height="200" src="https://storage.googleapis.com/a1aa/image/TG8f792kHKXoTavtWwyso0OlSe923IGebNaM86peKmegLU0cC.jpg" width="200"/>
+                <div class="post-info">
+                    <div class="meta">
+                        <img alt="Admin profile picture" height="30" src="https://storage.googleapis.com/a1aa/image/WuerNgj6qZ3DOqJMZEthYXlCuN1DcDM0eXUeDTnG44myCFNnA.jpg" width="30"/>
+                        <span class="author">By Admin</span>
+                    </div>
+                    <h2>It's wonderful in Paris this time of year.</h2>
+                    <p>Book now for limited offers.</p>
+                    <div class="actions">
+                        <a href="#"><i class="fas fa-comments"></i> Comment(5)</a>
+                        <a href="#" class="more">More</a>
+                    </div>
+                    <div class="meta date"><span>March 2024</span></div>
+                </div>
+            </div>
+            <div class="post">
+                <img alt="Couple walking on the beach" height="200" src="https://storage.googleapis.com/a1aa/image/OF5Sgxenc4RrJiYsplWjy4RnmuVmf8xNhgwkrGJtqTBahimTA.jpg" width="200"/>
+                <div class="post-info">
+                    <div class="meta">
+                        <img alt="Admin profile picture" height="30" src="https://storage.googleapis.com/a1aa/image/WuerNgj6qZ3DOqJMZEthYXlCuN1DcDM0eXUeDTnG44myCFNnA.jpg" width="30"/>
+                        <span class="author">By Admin</span>
+                    </div>
+                    <h2>Make memories worth remembering.</h2>
+                    <p>Book with us today for a 15% discount.</p>
+                    <div class="actions">
+                        <a href="#"><i class="fas fa-comments"></i> Comment(5)</a>
+                        <a href="#" class="more">More</a>
+                    </div>
+                    <div class="meta date"><span>March 2024</span></div>
+                </div>
+            </div>
+        </div>
+
+        <button class="scroll-top" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up">
+            </i>
+           </button>
+   
+
+    <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email address...">
+        <button>Subscribe</button>
+    </div>
+
+    <div class="footer">
+        <div class="column">
+          <h3>Drifty Currents</h3>
+          <p>Call Us<br>+234 5362 42365</p>
+          <p>Mail Us<br>hello@Drifty Currents.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Useful Links</h3>
+          <ul>
+           <a href="travel.html"><li>Home</li></a>
+           <a href="gallery.html"><li>Gallery</li></a>
+           <a href="destinations.html"><li>Destinations</li></a>
+           <a href="about.html"><li>About Us</li></a>
+           <a href="contact.html"><li>Contact Us</li></a>
+           <a href="guide.html"><li>Tour Guides</li></a>
+           <a href="booking.html"><li>Booking</li></a>
+           <a href="tours.html"><li>Tours</li></a>
+          </ul>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Drifty Currents All rights reserved.</p>
+          <div class="terms">
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <script src='main.js'></script>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map centered on Surulere with a zoom level of 15
+        const map = L.map("map").setView([6.4976, 3.3603], 15);
+
+        // Use CartoDB Positron tiles
+        L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+            attribution: '&copy; <a href="https://carto.com/">CARTO</a> contributors',
+            subdomains: "abcd",
+            maxZoom: 19,
+        }).addTo(map);
+
+        // Add a marker at the new NIIT Surulere location
+        const niitMarker = L.marker([6.4976, 3.3603])
+            .addTo(map)
+            .bindPopup("<b>NIIT Surulere</b><br>114 Funsho Williams Ave, Lagos");
+
+        // Open the popup by default
+        niitMarker.openPopup();
+
+    </script>
+</body>
+</html>

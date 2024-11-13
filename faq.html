@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DRIFTY | CURRENTS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='booking.css'> -->
+    <link rel='stylesheet' type='text/css' media='screen' href='confirmation.css'>
+    <link rel="shortcut icon" href="img/Logo.png" style="height: 192px; width: 192px;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src='main.js'></script>
+    <script src='slideshow.js'></script>
+    <script src='pagination.js'></script>
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-circle"></div>
+    </div>
+
+    <div class="headerfaq">
+        <div class="navbar">
+         <div class="logo">
+            <a href="travel.html"><img alt="" src="img/logo.png" style="height: 100px; width: 100px;"/></a>
+          <h2>
+           Drifty Currents
+          </h2>
+         </div>
+         <div class="hamburger" onclick="toggleNav()">
+            <div>
+               <i class="fas fa-bars"></i> 
+            </div>
+            <!-- <div>
+            </div>
+            <div>
+            </div> -->
+           </div>
+         <div class="nav-links" id="nav">
+          <a href="travel.html">
+           Home
+          </a>
+          <div class="dropdown">
+            <a href="#">Destinations<i class="fas fa-chevron-down" style="margin-left: 5px;"></i></a>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="destinations.html">Destinations</a>
+                    <a href="eiffeltower.html">Destination Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Tours</a>
+            <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="tours.html">Tours</a>
+                    <a href="santorini.html">Tour Details</a>
+                </div>
+            </div>
+        </div>
+          <div class="dropdown">
+           <a href="#">Pages</a>
+           <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+           <div class="dropdown-wrapper">
+           <div class="dropdown-content">
+            <a href="about.html">About Us</a>
+            <a href="booking.html">Booking Process</a>
+            <a href="guide.html">Tour Guide</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="faq.html">FAQ's</a>
+           </div>
+           </div>
+         </div>
+          <a href="blog.html">
+           Blog
+          </a>
+          <a href="contact.html">
+           Contacts
+          </a>
+         </div>
+         <div class="search-contact">
+            <i class="fas fa-search" style="cursor: pointer;" onclick="toggleInputField()"></i>
+            <a href="login.html"><i class="fas fa-user-circle" style="position: relative; left: 10px; bottom: 1px; cursor: pointer;" onclick="toggleSearchbar()"></i></a>
+            <div class="contact-number">+234 (123) 985 789</div>
+            <div class="input-field" id="input-area" style="display: none;">
+                <input type="text" placeholder="Search...">
+                <button class="searchh-button" type="button">
+                    <i class="fas fa-search" style="color: #00bcd4;"></i> <!-- Font Awesome search icon -->
+                </button>
+            </div>
+        </div>
+          
+         </div>
+         
+        </div>
+       <div class="header-content">
+            <h1 style="color: white;">
+             FAQ's
+            </h1>
+        </div>
+    </div> 
+
+    
+    <div class="maltent">
+        <div class="faq-section">
+            <h2>Frequently Asked Question</h2>
+            <div class="faq-item active">
+                <div class="h3-container">
+                    <h3>Which payment methods are acceptable? <i class="fas fa-plus"></i></h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation.</p>
+                <ul>
+                    <li>Air fares</li>
+                    <li>4 Nights Hotel Accommodation</li>
+                    <li>Entrance Fees</li>
+                </ul>
+            </div>
+            <div class="faq-item">
+                <div class="h3-container">
+                    <h3>How to book the new tour for 2 persons? <i class="fas fa-plus"></i></h3>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h3-container">
+                    <h3>Is it possible to manage details through dashboard? <i class="fas fa-plus"></i></h3>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h3-container">
+                    <h3>Multiple tour bookings are allowed? <i class="fas fa-plus"></i></h3>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h3-container">
+                    <h3>I want to cancel my booking? <i class="fas fa-plus"></i></h3>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h3-container">
+                    <h3>All taxes are included in the booking prices? <i class="fas fa-plus"></i></h3>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h3-container">
+                    <h3>Why are your tours so expensive? <i class="fas fa-plus"></i></h3>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="h3-container">
+                    <h3>What is the best way to contact with the guide? <i class="fas fa-plus"></i></h3>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Ask Your valuable Question</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Phone Number">
+            <textarea placeholder="Message"></textarea>
+            <button>Submit Now</button>
+        </div>
+    </div>
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up">
+        </i>
+       </button>
+    
+
+    <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email address...">
+        <button>Subscribe</button>
+    </div>
+    <div class="footer">
+        <div class="column">
+          <h3>Drifty Currents</h3>
+          <p>Call Us<br>+234 5362 42365</p>
+          <p>Mail Us<br>hello@Drifty Currents.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="travel.html"><li>Home</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+            <a href="guide.html"><li>Tour Guides</li></a>
+            <a href="booking.html"><li>Booking</li></a>
+            <a href="tours.html"><li>Tours</li></a>
+           </ul>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Drifty Currents All rights reserved.</p>
+          <div class="terms">
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+    item.addEventListener('click', () => {
+        const parent = item.closest('.faq-item');
+        parent.classList.toggle('active');
+    });
+});
+
+
+// Function to hide the loading screen and show the main content
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    // Forcefully hide the loading screen
+    loadingScreen.style.display = 'none';
+    // Show the main content
+    mainContent.style.display = 'block';
+}
+
+// Simulate loading process
+window.onload = function() {
+    // Use a timeout to simulate loading time
+    setTimeout(hideLoadingScreen, 2000); // Adjust the time as needed
+};
+    </script>
+</body>
+</html>    

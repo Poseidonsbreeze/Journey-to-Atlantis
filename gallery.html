@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DRIFTY | CURRENTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="eiffel.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="taj.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="gallery.css">
+    <link rel="shortcut icon" href="img/Logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="main.js"></script>
+    <script src="slideshow.js"></script>
+    <!-- <script src="pagination.js"></script> -->
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-circle"></div>
+    </div>
+
+    <div class="gallery-header">
+        <div class="navbar">
+         <div class="logo">
+            <a href="travel.html"><img alt="" src="img/logo.png" style="height: 100px; width: 100px;"/></a>
+          <h2>
+           Drifty Currents
+          </h2>
+         </div>
+         <div class="hamburger" onclick="toggleNav()">
+            <div>
+               <i class="fas fa-bars"></i> 
+            </div>
+            <!-- <div>
+            </div>
+            <div>
+            </div> -->
+           </div>
+         <div class="nav-links" id="nav">
+          <a href="travel.html">
+           Home
+          </a>
+          <div class="dropdown">
+            <a href="#">Destinations<i class="fas fa-chevron-down" style="margin-left: 5px;"></i></a>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="destinations.html">Destinations</a>
+                    <a href="eiffeltower.html">Destination Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Tours</a>
+            <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="tours.html">Tours</a>
+                    <a href="santorini.html">Tour Details</a>
+                </div>
+            </div>
+        </div>
+          <div class="dropdown">
+           <a href="#">Pages</a>
+           <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+           <div class="dropdown-wrapper">
+           <div class="dropdown-content">
+            <a href="about.html">About Us</a>
+            <a href="booking.html">Booking Process</a>
+            <a href="guide.html">Tour Guide</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="faq.html">FAQ's</a>
+           </div>
+           </div>
+         </div>
+          <a href="blog.html">
+           Blog
+          </a>
+          <a href="contact.html">
+           Contacts
+          </a>
+         </div>
+         <div class="search-contact">
+            <i class="fas fa-search" style="cursor: pointer;" onclick="toggleInputField()"></i>
+            <a href="login.html"><i class="fas fa-user-circle" style="position: relative; left: 10px; bottom: 1px; cursor: pointer;" onclick="toggleSearchbar()"></i></a>
+            <div class="contact-number">+234 (123) 985 789</div>
+            <div class="input-field" id="input-area" style="display: none;">
+                <input type="text" placeholder="Search...">
+                <button class="searchh-button" type="button">
+                    <i class="fas fa-search" style="color: #00bcd4;"></i> <!-- Font Awesome search icon -->
+                </button>
+            </div>
+        </div>
+          
+         
+         
+        </div>
+       <div class="header-content">
+            <h1 style="color: white;">
+             Gallery
+            </h1>
+        </div>
+    </div> 
+
+
+    <div class="gallery">
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(1)">
+        <img alt="Two women enjoying ice cream" src="https://storage.googleapis.com/a1aa/image/EEZDVsrKdCJOLpS36Rnh2QnY3TCpKmproTPwqoRmiDoQB66E.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+        </div>
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(2)">
+        <img alt="Hot air balloons in the sky" src="https://storage.googleapis.com/a1aa/image/fGyFJhGGDESJKKJODea7TakwCfKDXn5IdJWH4a4nWLCQKQXnA.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+        </div>
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(3)">
+        <img alt="Elephant in the wild" src="https://storage.googleapis.com/a1aa/image/4xq57Ug97CpcCV91FRoi0gtxZlCG41oNicpTnfirBWeeJQXnA.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+       </div>
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(4)">
+        <img alt="Mountain landscape with lake"src="https://storage.googleapis.com/a1aa/image/1wj2NPNr3F7aERX5zv1bXiOGM5MJ3FWdAnU9Gi6RGfSiC01JA.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+       </div>
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(5)">
+        <img alt="Person taking a photo with a camera" src="https://storage.googleapis.com/a1aa/image/rdJqUSVeKcWoTSOwa1JAvIliI99iOPrMxAuBIsT3QqhiC01JA.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+       </div>
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(6)">
+        <img alt="Boat on a tropical beach"src="https://storage.googleapis.com/a1aa/image/BVfr1XJfW6m12UmeZGeWZThy0nG2gleXnqVHrLgQEetnRB66E.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+      </div>
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(7)">
+        <img alt="Person on a swing at sunset" src="https://storage.googleapis.com/a1aa/image/lG0WH00w7PYaPVlTBOHZ2H4CcffuefzEHZs9SOyu84wrUguOB.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+       </div>
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(8)">
+        <img alt="Windmill in a field" src="https://storage.googleapis.com/a1aa/image/0p6iaEH7mO7QMd8PznLoPKEyeHE9UWReeU1nOXIQlLwAKQXnA.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+        </div>
+        <div class="gallery-items" onclick="openSlideshow(); currentSlide(9)">
+        <img alt="Couple looking at a map" src="https://storage.googleapis.com/a1aa/image/5XVtVJb7mYZFGl3qv9JGFQtoT2JMP2xCaLJWWghdPidSB66E.jpg"/>
+        <div class="overlay"></div>
+        <i class="fas fa-plus"></i>
+        </div>
+       </div>
+
+       <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up">
+        </i>
+       </button>
+
+    <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email address...">
+        <button>Subscribe</button>
+    </div>
+  
+    <div class="footer">
+        <div class="column">
+          <h3>Drifty Currents</h3>
+          <p>Call Us<br>+234 5362 42365</p>
+          <p>Mail Us<br>hello@Drifty Currents.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="travel.html"><li>Home</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+            <a href="guide.html"><li>Tour Guides</li></a>
+            <a href="booking.html"><li>Booking</li></a>
+            <a href="tours.html"><li>Tours</li></a>
+           </ul>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Drifty Currents All rights reserved.</p>
+          <div class="terms">
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="slideshowModal" class="slideshow-modal">
+        <span class="close" onclick="closeSlideshow()">&times;</span>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img alt="Two women enjoying ice cream" height="300" src="https://storage.googleapis.com/a1aa/image/EEZDVsrKdCJOLpS36Rnh2QnY3TCpKmproTPwqoRmiDoQB66E.jpg" width="300"/>
+            </div>
+            <div class="mySlides">
+                <img alt="Hot air balloons in the sky" height="300" src="https://storage.googleapis.com/a1aa/image/fGyFJhGGDESJKKJODea7TakwCfKDXn5IdJWH4a4nWLCQKQXnA.jpg" width="300"/>
+            </div>
+            <div class="mySlides">
+                <img alt="Elephant in the wild" height="300" src="https://storage.googleapis.com/a1aa/image/4xq57Ug97CpcCV91FRoi0gtxZlCG41oNicpTnfirBWeeJQXnA.jpg" width="300"/>
+            </div>
+            <div class="mySlides">
+                <img alt="Mountain landscape with lake" height="300" src="https://storage.googleapis.com/a1aa/image/1wj2NPNr3F7aERX5zv1bXiOGM5MJ3FWdAnU9Gi6RGfSiC01JA.jpg" width="300"/>
+            </div>
+            <div class="mySlides">
+                <img alt="Windmill in a field" height="300" src="https://storage.googleapis.com/a1aa/image/0p6iaEH7mO7QMd8PznLoPKEyeHE9UWReeU1nOXIQlLwAKQXnA.jpg" width="300"/>
+            </div>
+            <div class="mySlides">
+                <img alt="Couple looking at a map" height="300" src="https://storage.googleapis.com/a1aa/image/5XVtVJb7mYZFGl3qv9JGFQtoT2JMP2xCaLJWWghdPidSB66E.jpg" width="300"/>
+            </div>
+            <div class="mySlides">
+                <img alt="Person taking a photo with a camera" height="300" src="https://storage.googleapis.com/a1aa/image/rdJqUSVeKcWoTSOwa1JAvIliI99iOPrMxAuBIsT3QqhiC01JA.jpg" width="300"/>
+            </div>
+            <div class="mySlides">
+                <img alt="Boat on a tropical beach" height="300" src="https://storage.googleapis.com/a1aa/image/BVfr1XJfW6m12UmeZGeWZThy0nG2gleXnqVHrLgQEetnRB66E.jpg" width="300"/>
+            </div>
+            <div class="mySlides">
+                <img alt="Person on a swing at sunset" height="300" src="https://storage.googleapis.com/a1aa/image/lG0WH00w7PYaPVlTBOHZ2H4CcffuefzEHZs9SOyu84wrUguOB.jpg" width="300"/>
+            </div>
+            <a class="back" onclick="plusSlides(-1)">❮</a>
+            <a class="front" onclick="plusSlides(1)">❯</a>
+            <button id="playPauseBtn" onclick="toggleSlideshow()">
+                <i class="fas fa-play"></i>
+            </button>
+            <!-- <button class="exit-btn" onclick="closeSlideshow()">Exit</button> -->
+        </div>
+    </div>
+
+    <script>
+        // Function to hide the loading screen and show the main content
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    // Forcefully hide the loading screen
+    loadingScreen.style.display = 'none';
+    // Show the main content
+    mainContent.style.display = 'block';
+}
+
+// Simulate loading process
+window.onload = function() {
+    // Use a timeout to simulate loading time
+    setTimeout(hideLoadingScreen, 2000); // Adjust the time as needed
+};
+    </script>
+</body>
+</html>    

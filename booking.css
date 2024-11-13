@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.form-container {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline-color: #00e5ff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for border color and box shadow */
+}
+.form-container textarea {
+    height: 100px;
+}
+.form-container .btn {
+    background-color: #00e5ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container .btn:hover {
+    background-color: #00e5ff;
+}
+.summary-container {
+    width: 25%;
+    height: 50%;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.summary-container img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.summary-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.summary-container p {
+    margin: 5px 0;
+}
+.summary-container .total {
+    font-size: 18px;
+    font-weight: 700;
+    color: #00e5ff;
+}
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.steps div {
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+.steps .active {
+    background-color: #00e5ff;
+    color: white;
+}
+
+.error {
+    border: red 2px solid !important;  
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    animation: buzz 1.1s infinite; /* Apply the buzzing animation */
+}
+
+@keyframes buzz {
+    0% {
+        border-color: red;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    }
+    25% {
+        border-color: #ff4d4d; /* Slightly lighter red */
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+    50% {
+        border-color: red;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    }
+    75% {
+        border-color: #ff4d4d; /* Slightly lighter red */
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+    100% {
+        border-color: red;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    }
+}
+
+
+    @media (max-width: 400px) {
+          /* Container */
+    .container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Reduce padding */
+        width: 100%; /* Full width */
+    }
+
+    .summary-container {
+        width: 100%; /* Full width for summary */
+        background-color: #0d1b2a;
+        padding: 10px; /* Reduce padding */
+        margin: 10px 0; /* Space above and below */
+    }
+    }

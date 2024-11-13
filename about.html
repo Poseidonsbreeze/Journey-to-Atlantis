@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DRIFTY | CURRENTS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='about.css'>
+    <link rel="shortcut icon" href="img/Logo.png" style="height: 192px; width: 192px;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="main.js"></script>
+    <!-- <script src="load.js"></script> -->
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-circle"></div>
+    </div>
+    <div class="header3">
+        <div class="navbar">
+         <div class="logo">
+            <a href="travel.html"><img alt="" src="img/logo.png" style="height: 100px; width: 100px;"/></a>
+          <h2>
+           Drifty Currents
+          </h2>
+         </div>
+         <div class="hamburger" onclick="toggleNav()">
+            <div>
+               <i class="fas fa-bars"></i> 
+            </div>
+            <!-- <div>
+            </div>
+            <div>
+            </div> -->
+           </div>
+         <div class="nav-links" id="nav">
+          <a href="travel.html">
+           Home
+          </a>
+          <div class="dropdown">
+            <a href="#">Destinations<i class="fas fa-chevron-down" style="margin-left: 5px;"></i></a>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="destinations.html">Destinations</a>
+                    <a href="eiffeltower.html">Destination Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Tours</a>
+            <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="tours.html">Tours</a>
+                    <a href="santorini.html">Tour Details</a>
+                </div>
+            </div>
+        </div>
+          <div class="dropdown">
+           <a href="#">Pages</a>
+           <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+           <div class="dropdown-wrapper">
+           <div class="dropdown-content">
+            <a href="about.html">About Us</a>
+            <a href="booking.html">Booking Process</a>
+            <a href="guide.html">Tour Guide</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="faq.html">FAQ's</a>
+           </div>
+           </div>
+         </div>
+          <a href="blog.html">
+           Blog
+          </a>
+          <a href="contact.html">
+           Contacts
+          </a>
+         </div>
+         <div class="search-contact">
+            <i class="fas fa-search" style="cursor: pointer;" onclick="toggleInputField()"></i>
+            <a href="login.html"><i class="fas fa-user-circle" style="position: relative; left: 10px; bottom: 1px; cursor: pointer;" onclick="toggleSearchbar()"></i></a>
+            <div class="contact-number">+234 (123) 985 789</div>
+            <div class="input-field" id="input-area" style="display: none;">
+                <input type="text" placeholder="Search...">
+                <button class="searchh-button" type="button">
+                    <i class="fas fa-search" style="color: #00bcd4;"></i> <!-- Font Awesome search icon -->
+                </button>
+            </div>
+        </div>
+         
+        </div>
+       <div class="header-content">
+            <h1>
+             About Us
+            </h1>
+        </div>
+    </div> 
+
+
+    <div class="about">
+        <div class="images">
+            <div class="label">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Paradise on Earth</span>
+            </div>
+            <img alt="" height="500" class="img1" src="img/sailing (1).jpg" width="500"/>
+            <img alt="" height="450" class="img2" src="img/eiffel tower.jpg" style="position: absolute; top: 20%; left: 23%; border: 18px solid white;" width="300"/>
+        </div>
+        <div class="content">
+            <h2>ABOUT US</h2>
+            <h1>We are Professional Planners For Your Trips</h1>
+            <hr><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="tel:+234546378654">Speak to our Destination Experts at Direct Call +234 546 378 654</a>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> All places and activities are carefully picked by us.</li>
+                <li><i class="fas fa-check-circle"></i> 98% Course Completion Rates</li>
+                <li><i class="fas fa-check-circle"></i> We are an award winning agency</li>
+                <li><i class="fas fa-check-circle"></i> Trusted by more than 80,000 customers</li>
+            </ul>
+        </div>
+    </div>
+    <a href="about.html"><button class="read">Read more <i class="fas fa-arrow-right"></i></button></a>
+
+    <div class="about-container"></div>
+        <div class="background-image"></div>
+        <div class="text-block">
+            <div class="discount">15%<br>OFF</div>
+            <div class="offer-details">
+                <h1>Last Drifty Currents Offer</h1>
+                <h2>Aerial view of Cape Town with Cape Town Stadium</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit felis sit amet turpis vehicula convallis. Ut ac tellus velit. Nulla mollis sollicitudin lacus id ornare. Phasellus laoreet nulla et nulla sagittis, sit amet cursus urna mollis.</p>
+                <!-- <a href="#" class="read-more">Read More →</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="choose-container">
+        <div class="choose-header">
+            WHY CHOOSE US?
+        </div>
+        <div class="choose">
+            Get The Best Travel Experience
+        </div>
+        <div class="choose-content">
+            <div class="nfo">
+                <div class="con">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3>Set Travel Plan</h3>
+                <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+            </div>
+            <div class="main-image">
+                <img src="https://storage.googleapis.com/a1aa/image/09lT4ObXZbJjLtnf9a2IbckxADBnBbROFWZY4sYoAorp5I0JA.jpg" alt="A happy traveler sitting on a suitcase with famous landmarks and an airplane in the background">
+            </div>
+            <div class="nfo">
+                <div class="con">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Explore Around</h3>
+                <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+            </div>
+            <div class="nfo">
+                <div class="con">
+                    <i class="fas fa-hotel"></i>
+                </div>
+                <h3>Luxury Hotel</h3>
+                <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+            </div>
+            <div class="nfo">
+                <div class="con">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Support 24/7</h3>
+                <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-container">
+        <div class="team-title">
+            TRAVEL AGENTS
+        </div>
+        <div class="subtitle">
+            Our Experts Team Member
+        </div>
+        <div class="team">
+            <div class="team-member">
+                <img alt="A person wearing an orange jacket and a beanie, holding a camera, standing outdoors with a blurred background of greenery." src="https://storage.googleapis.com/a1aa/image/CPN2Zt6r9MIzEtGciyLfzmJC54p8j4C85G0TOECQ2UalVJ0JA.jpg" />
+                <div class="detes">
+                    <h3>John Doe</h3>
+                    <p>TRAVEL CONSULTANT</p>
+                    <div class="detes-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img alt="A person wearing sunglasses and a white t-shirt, carrying a backpack, standing outdoors with a blurred background of greenery." src="https://storage.googleapis.com/a1aa/image/3BopDhUdOEI2PFCenCz61PtTfdHkEgRk5FFGXJaKjtvMrSoTA.jpg" />
+                <div class="detes">
+                    <h3>David Cooper</h3>
+                    <p>CO FOUNDER</p>
+                    <div class="detes-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img alt="A person wearing a blue backpack and holding binoculars, smiling, standing outdoors with a blurred background of greenery." src="https://storage.googleapis.com/a1aa/image/nmefUsefOsOOlQQwgfJ1B07bq5qusiIIVsXwznwvJgNoZVCdC.jpg" />
+                <div class="detes">
+                    <h3>Jane Smith</h3>
+                    <p>TOUR GUIDE</p>
+                    <div class="detes-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video">
+        <div class="vid-container">
+            <video id="myVideo" width="1000" height="600" style="display: none;">
+                <source src="vid/WhatsApp Video 2024-10-04 at 10.37.01_e6123498.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img alt="Aerial view of a tropical resort with lush greenery and surrounding ocean" height="600" src="https://storage.googleapis.com/a1aa/image/8a56moEYxrbvMNIeHsuNFmmpaVs2I67vSFvfsIBBYTGlmhmTA.jpg" width="1000" class="video-thumbnail"/>
+            <div class="location-text"><i class="fas fa-map-marker-alt"></i> Location Mountain Strait, Any State</div>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+            <div class="text-overlay">
+                <p style="font-family:'playfair display';">OUR JOURNEY</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="logos-container">
+        <div class="logos">
+            <img alt="attentive logo" height="50" src="https://storage.googleapis.com/a1aa/image/1D3Nteyz3wVTMSAfy6DeeZzfkFEg4EfMqKimyfTmZjf1AVimTA.jpg" width="100"/>
+            <img alt="DocuSign logo" height="50" src="https://storage.googleapis.com/a1aa/image/olngYWzYzCL1MNt2UcT4yZd635ZKSene0egzhr5eZjf7oS0cC.jpg" width="100"/>
+            <img alt="afterpay logo" height="50" src="https://storage.googleapis.com/a1aa/image/9Y32mZBQXNroKBF3RKde8X9g1GFMNYysMnuWJTvekFhBVimTA.jpg" width="100"/>
+            <img alt="Framer logo" height="50" src="https://storage.googleapis.com/a1aa/image/XQpz8eB0CrTMR65eYy4KUGYORcxsRh5Jy2O5dho5zpmGVimTA.jpg" width="100"/>
+        </div>
+    </div>
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up">
+        </i>
+       </button>
+    <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email address...">
+        <button>Subscribe</button>
+    </div>
+
+    <div class="footer">
+        <div class="column">
+          <h3>Drifty Currents</h3>
+          <p>Call Us<br>+234 5362 42365</p>
+          <p>Mail Us<br>hello@Drifty Currents.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="travel.html"><li>Home</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+            <a href="guide.html"><li>Tour Guides</li></a>
+            <a href="booking.html"><li>Booking</li></a>
+            <a href="tours.html"><li>Tours</li></a>
+           </ul>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Drifty Currents All rights reserved.</p>
+          <div class="terms">
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+   <script>
+    window.onload = function() {
+    const video = document.getElementById('myVideo');
+    const playButton = document.querySelector('.play-button');
+    const thumbnail = document.querySelector('.video-thumbnail');
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    console.log('Video element:', video);
+    console.log('Play button element:', playButton);
+
+    // Check if video element is null
+    if (!video) {
+        console.error('Video element not found!');
+        return;
+    }
+
+    // Function to hide the loading screen and show the main content
+    function hideLoadingScreen() {
+        // Forcefully hide the loading screen
+        loadingScreen.style.display = 'none';
+        // Show the main content
+        mainContent.style.display = 'block';
+    }
+
+    // Simulate loading process
+    setTimeout(hideLoadingScreen, 2000); // Adjust the time as needed
+
+    // Add an event listener to the video to pause it when ended
+    video.addEventListener('ended', () => {
+        console.log('Video ended!');
+        thumbnail.style.display = 'block';
+        playButton.style.display = 'block';
+        video.style.display = 'none';
+    });
+
+    // Add an event listener to the play button
+    playButton.addEventListener('click', () => {
+        console.log('Play button clicked!');
+        thumbnail.style.display = 'none';
+        video.style.display = 'block';
+        playButton.style.display = 'none';
+        video.play().catch(error => {
+            console.error('Error playing video:', error);
+        });
+        console.log('Video playing...');
+    });
+};
+
+   </script>
+</body>
+</html>   

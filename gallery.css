@@ -1,0 +1,66 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    /* height: auto; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-items:hover .fas.fa-plus {
+    display: block; 
+}
+
+.gallery-items {
+    position: relative; /* Position relative for icon positioning */
+    /* width: calc(33.333% - 10px); Set width for all images */
+    height: 400px; /* Set a fixed height for all images */
+    border-radius: 10px; /* Rounded corners for images */
+    overflow: hidden; /* Hide overflow */
+    border: 3px solid #fff;
+    transition: 0.5s ease;
+    box-sizing: border-box;
+}
+
+.gallery-items img {
+    width: 100%; /* Make image fill the container */
+    height: 100%; 
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+    border-radius: 10px; /* Rounded corners for images */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.gallery-items:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.gallery-items:hover {
+    transform: scale(1.05); 
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border-radius: 10px; /* Match border radius */
+    
+}
+
+@media (max-width: 400px) {
+    .gallery {
+     display: flex;
+     flex-direction: column;
+    }
+
+    
+}

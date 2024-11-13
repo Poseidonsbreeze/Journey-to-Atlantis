@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DRIFTY | CURRENTS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/Logo.png" style="height: 192px; width: 192px;">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='tours.css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.ripples.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-circle"></div>
+    </div>
+
+    <div class="tour-header">
+        <div class="ripple-container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="travel.html"><img alt="" src="img/logo.png" style="height: 100px; width: 100px;"/></a>
+                    <h2>Drifty Currents</h2>
+                </div>
+                <div class="hamburger" onclick="toggleNav()">
+                    <div>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="nav-links" id="nav">
+                    <a href="travel.html">Home</a>
+                    <div class="dropdown">
+                        <a href="#">Destinations<i class="fas fa-chevron-down" style="margin-left: 5px;"></i></a>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <a href="destinations.html">Destinations</a>
+                                <a href="eiffeltower.html">Destination Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Tours</a>
+                        <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <a href="tours.html">Tours</a>
+                                <a href="santorini.html">Tour Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Pages</a>
+                        <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+                        <div class="dropdown-wrapper">
+                            <div class="dropdown-content">
+                                <a href="about.html">About Us</a>
+                                <a href="booking.html">Booking Process</a>
+                                <a href="guide.html">Tour Guide</a>
+                                <a href="gallery.html">Gallery</a>
+                                <a href="login.html">Sign In</a>
+                                <a href="signup.html">Sign Up</a>
+                                <a href="faq.html">FAQ's</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacts.html">Contacts</a>
+                </div>
+                <div class="search-contact">
+                    <i class="fas fa-search" style="cursor: pointer;" onclick="toggleInputField()"></i>
+                    <a href="login.html"><i class="fas fa-user-circle" style="position: relative; left: 10px; bottom: 1px; cursor: pointer;" onclick="toggleSearchbar()"></i></a>
+                    <div class="contact-number">+234 (123) 985 789</div>
+                    <div class="input-field" id="input-area" style="display: none;">
+                        <input type="text" placeholder="Search...">
+                        <button class="searchh-button" type="button">
+                            <i class="fas fa-search" style="color: #00bcd4;"></i> <!-- Font Awesome search icon -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <h1 style="color: white;">
+             Tours
+            </h1>
+        </div>
+    </div>
+    <div class="tour-container">
+        <div class="tard">
+           <a href="santorini.html"><img src="img/sant1.jpg" alt="Beautiful view of Solomon Island with a boat on turquoise water and lush green mountains in the background"></a>
+            <div class="duration">3 Day 2 Night</div>
+            <div class="tontent">
+                <h3>Beauty of Santorini</h3>
+                <div class="tocation">
+                    <p><i class="fas fa-map-marker-alt"></i> Greece</p>
+                </div>
+                <p class="price">$4500</p>
+                <a href="booking.html"><button class="book-now">Book Now</button></a>
+            </div>
+        </div>
+        <div class="tard">
+            <a href="france.html"><img src="img/eiffel2.jpeg" style="height: 400px;" alt="Scenic view of a historic building in Paris, France with boats on the water"></a>
+            <div class="duration">3 Day 2 Night</div>
+            <div class="tontent">
+                <h3>Believe In France</h3>
+                <div class="tocation">
+                    <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                </div>
+                <p class="price">$4500</p>
+                <a href="booking.html"><button class="book-now">Book Now</button></a>
+            </div>
+        </div>
+        <div class="tard">
+            <a href="italy.html"><img src="img/rome1.jpg" style="height: 400px;" alt="Group of friends enjoying the view from a car in the Bahamas"></a>
+            <div class="duration">3 Day 2 Night</div>
+            <div class="tontent">
+                <h3>Proof That Rome is Beauty</h3>
+              <div class="tocation">
+                <p><i class="fas fa-map-marker-alt"></i> Rome, Italy</p>
+              </div>
+                <p class="price">$4500</p>
+                <a href="booking.html"><button class="book-now">Book Now</button></a>
+            </div>
+        </div>
+        <div class="tard">
+            <a href="bahamas.html"><img src="img/baha1.jpg" style="height: 400px;" alt="Group of friends enjoying the view from a car in the Bahamas"></a>
+            <div class="duration">3 Day 2 Night</div>
+            <div class="tontent">
+                <h3>Proof That Bahamas Beauty</h3>
+              <div class="tocation">
+                <p><i class="fas fa-map-marker-alt"></i> The Bahamas</p>
+              </div>
+                <p class="price">$4500</p>
+                <a href="booking.html"><button class="book-now">Book Now</button></a>
+            </div>
+        </div>
+        <div class="tard">
+            <a href="maldives.html"><img src="img/mald1.jpg" style="height: 400px;" alt="Group of friends enjoying the view from a car in the Bahamas"></a>
+            <div class="duration">3 Day 2 Night</div>
+            <div class="tontent">
+                <h3>Proof That That The Maldives is Beauty</h3>
+              <div class="tocation">
+                <p><i class="fas fa-map-marker-alt"></i> The Maldives</p>
+              </div>
+                <p class="price">$4500</p>
+                <a href="booking.html"><button class="book-now">Book Now</button></a>
+            </div>
+        </div>
+        <div class="tard">
+            <a href="macchupicchu.html"><img src="img/macc1.jpg" style="height: 400px;" alt="Group of friends enjoying the view from a car in the Bahamas"></a>
+            <div class="duration">3 Day 2 Night</div>
+            <div class="tontent">
+                <h3>Proof That Machu Picchu is Beauty</h3>
+              <div class="tocation">
+                <p><i class="fas fa-map-marker-alt"></i> Machu Picchu, Italy</p>
+              </div>
+                <p class="price">$4500</p>
+                <a href="booking.html"><button class="book-now">Book Now</button></a>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up">
+        </i>
+       </button>
+
+    <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email address...">
+        <button>Subscribe</button>
+    </div>
+
+    <div class="footer">
+        <div class="column">
+          <h3>Drifty Currents</h3>
+          <p>Call Us<br>+234 5362 42365</p>
+          <p>Mail Us<br>hello@Drifty Currents.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="travel.html"><li>Home</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+            <a href="guide.html"><li>Tour Guides</li></a>
+            <a href="booking.html"><li>Booking</li></a>
+            <a href="tours.html"><li>Tours</li></a>
+           </ul>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Drifty Currents All rights reserved.</p>
+          <div class="terms">
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script>
+           // Function to hide the loading screen and show the main content
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    // Forcefully hide the loading screen
+    loadingScreen.style.display = 'none';
+    // Show the main content
+    mainContent.style.display = 'block';
+}
+
+// Simulate loading process
+window.onload = function() {
+    // Use a timeout to simulate loading time
+    setTimeout(hideLoadingScreen, 2000); // Adjust the time as needed
+};
+    </script>
+</body>
+</html>    
+    

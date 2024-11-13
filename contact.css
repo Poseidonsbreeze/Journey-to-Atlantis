@@ -1,0 +1,52 @@
+.contact-container {
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+}
+.contact-container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+.contact-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #00bcd4;
+    margin-bottom: 0;
+}
+.form-group {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.form-group input, .form-group textarea, .form-group select {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #2c3e50;
+    font-size: 1em;
+    outline: none;
+    /* align-items: center; */
+}
+.form-group i {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin: 0 10px;
+}
+.btn {
+    background-color: #00e5ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn i {
+    margin-right: 10px;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DRIFTY | CURRENTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="eiffel.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="taj.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="contact.css">
+    <link rel="shortcut icon" href="img/Logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="main.js"></script>
+    <script src="slideshow.js"></script>
+    <!-- <script src="pagination.js"></script> -->
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-circle"></div>
+    </div>
+
+    <div class="headerreach">
+        <div class="navbar">
+         <div class="logo">
+            <a href="travel.html"><img alt="" src="img/logo.png" style="height: 100px; width: 100px;"/></a>
+          <h2>
+           Drifty Currents
+          </h2>
+         </div>
+         <div class="hamburger" onclick="toggleNav()">
+            <div>
+               <i class="fas fa-bars"></i> 
+            </div>
+            <!-- <div>
+            </div>
+            <div>
+            </div> -->
+           </div>
+         <div class="nav-links" id="nav">
+          <a href="travel.html">
+           Home
+          </a>
+          <div class="dropdown">
+            <a href="#">Destinations<i class="fas fa-chevron-down" style="margin-left: 5px;"></i></a>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="destinations.html">Destinations</a>
+                    <a href="eiffeltower.html">Destination Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Tours</a>
+            <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="tours.html">Tours</a>
+                    <a href="santorini.html">Tour Details</a>
+                </div>
+            </div>
+        </div>
+          <div class="dropdown">
+           <a href="#">Pages</a>
+           <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+           <div class="dropdown-wrapper">
+           <div class="dropdown-content">
+            <a href="about.html">About Us</a>
+            <a href="booking.html">Booking Process</a>
+            <a href="guide.html">Tour Guide</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="faq.html">FAQ's</a>
+           </div>
+           </div>
+         </div>
+          <a href="blog.html">
+           Blog
+          </a>
+          <a href="contact.html">
+           Contacts
+          </a>
+         </div>
+         <div class="search-contact">
+            <i class="fas fa-search" style="cursor: pointer;" onclick="toggleInputField()"></i>
+            <a href="login.html"><i class="fas fa-user-circle" style="position: relative; left: 10px; bottom: 1px; cursor: pointer;" onclick="toggleSearchbar()"></i></a>
+            <div class="contact-number">+234 (123) 985 789</div>
+            <div class="input-field" id="input-area" style="display: none;">
+                <input type="text" placeholder="Search...">
+                <button class="searchh-button" type="button">
+                    <i class="fas fa-search" style="color: #00bcd4;"></i> <!-- Font Awesome search icon -->
+                </button>
+            </div>
+        </div>
+         
+        </div>
+       <div class="header-content">
+            <h1 style="color: white;">
+             Contact Us
+            </h1>
+        </div>
+    </div> 
+
+
+    <div class="contact-section">
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Office Address</h3>
+            <p>7 Green Lake Street<br>Crawfordsville, IN 47933</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone Call</h3>
+            <p>+98 234 (4567) 890<br>+98 234 (4567) 890</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h3>E-Mail Us</h3>
+            <p>example@gmail.com<br>yourmail@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-headset"></i>
+            <h3>Supports</h3>
+            <p>24/7 any time support team<br>ready for supports.</p>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <h2>CONTACT US</h2>
+        <h1>Contact Information</h1>
+        <div class="form-group">
+            <input type="text" placeholder="Enter Your Name">
+           <i class="fas fa-user"></i>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Enter Your E-Mail">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Select Subjects">
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Write Message..." rows="4"></textarea>
+        </div>
+        <button class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </div>
+
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2763661136473!2d3.3627218740456684!3d6.486644423592511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c76ba123b97%3A0x1830320de955ab71!2sNIIT%20Surulere!5e0!3m2!1sen!2sch!4v1728907767167!5m2!1sen!2sch" width="600" height="300" style="width: 350px; position: relative; left: 20px; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe></p>
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up">
+        </i>
+       </button>
+    <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email address...">
+        <button>Subscribe</button>
+    </div>
+  
+    <div class="footer">
+        <div class="column">
+          <h3>Drifty Currents</h3>
+          <p>Call Us<br>+234 5362 42365</p>
+          <p>Mail Us<br>hello@Drifty Currents.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="travel.html"><li>Home</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+            <a href="guide.html"><li>Tour Guides</li></a>
+            <a href="booking.html"><li>Booking</li></a>
+            <a href="tours.html"><li>Tours</li></a>
+           </ul>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Drifty Currents All rights reserved.</p>
+          <div class="terms">
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script>
+        // Function to hide the loading screen and show the main content
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    // Forcefully hide the loading screen
+    loadingScreen.style.display = 'none';
+    // Show the main content
+    mainContent.style.display = 'block';
+}
+
+// Simulate loading process
+window.onload = function() {
+    // Use a timeout to simulate loading time
+    setTimeout(hideLoadingScreen, 2000); // Adjust the time as needed
+};
+    </script>
+</body>
+</html>    

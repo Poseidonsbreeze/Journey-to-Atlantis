@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DRIFTY | CURRENTS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='eiffel.css'>
+    <link rel="shortcut icon" href="img/Logo.png" style="height: 192px; width: 192px;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src='main.js'></script>
+    <script src='slideshow.js'></script>
+    <!-- <script src='pagination.js'></script> -->
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-circle"></div>
+    </div>
+
+    <div class="sheader">
+        <div class="navbar">
+         <div class="logo">
+            <a href="travel.html"><img alt="" src="img/logo.png" style="height: 100px; width: 100px;"/></a>
+          <h2>
+           Drifty Currents
+          </h2>
+         </div>
+         <div class="hamburger" onclick="toggleNav()">
+            <div>
+               <i class="fas fa-bars"></i> 
+            </div>
+            <!-- <div>
+            </div>
+            <div>
+            </div> -->
+           </div>
+         <div class="nav-links" id="nav">
+          <a href="travel.html">
+           Home
+          </a>
+          <div class="dropdown">
+            <a href="#">Destinations<i class="fas fa-chevron-down" style="margin-left: 5px;"></i></a>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="destinations.html">Destinations</a>
+                    <a href="eiffeltower.html">Destination Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Tours</a>
+            <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+            <div class="dropdown-wrapper">
+                <div class="dropdown-content">
+                    <a href="tours.html">Tours</a>
+                    <a href="santorini.html">Tour Details</a>
+                </div>
+            </div>
+        </div>
+          <div class="dropdown">
+           <a href="#">Pages</a>
+           <i class="fas fa-chevron-down" style="position: relative; right: 15px;"></i>
+           <div class="dropdown-wrapper">
+           <div class="dropdown-content">
+            <a href="about.html">About Us</a>
+            <a href="booking.html">Booking Process</a>
+            <a href="guide.html">Tour Guide</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="faq.html">FAQ's</a>
+           </div>
+           </div>
+         </div>
+          <a href="blog.html">
+           Blog
+          </a>
+          <a href="contact.html">
+           Contacts
+          </a>
+         </div>
+         <div class="search-contact">
+            <i class="fas fa-search" style="cursor: pointer;" onclick="toggleInputField()"></i>
+            <a href="login.html"><i class="fas fa-user-circle" style="position: relative; left: 10px; bottom: 1px; cursor: pointer;" onclick="toggleSearchbar()"></i></a>
+            <div class="contact-number">+234 (123) 985 789</div>
+            <div class="input-field" id="input-area" style="display: none;">
+                <input type="text" placeholder="Search...">
+                <button class="searchh-button" type="button">
+                    <i class="fas fa-search" style="color: #00bcd4;"></i> <!-- Font Awesome search icon -->
+                </button>
+            </div>
+        </div>
+          
+         </div>
+         
+        </div>
+       <div class="header-content">
+            <h1 style="color: white;">
+             Maldives
+            </h1>
+        </div>
+    </div> 
+
+
+    <div class="maldives">
+        <div class="santorini-content">
+            <div class="rini-rating">
+                <i class="fas fa-star"></i>
+                <span>8.0 Superb</span>
+            </div>
+            <h1>The Maldive Islands, Maldives</h1>
+            <p class="price">$170.00 / Per person</p>
+        </div>
+    </div>
+ <div class="tour-grid"> 
+    <div class="booking-form">
+        <h2>Book This Tour</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="tel" placeholder="Phone">
+        <input type="text" placeholder="Tickets">
+        <input type="text" placeholder="dd/mm/yy">
+        <textarea placeholder="Message"></textarea>
+        <button>Book Tour</button>
+    </div>
+    <div class="overview">
+        <h2>Overview</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+        <div class="rini-details">
+            <div>
+                <i class="fas fa-calendar-alt"></i>
+                <span>5 Days</span>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <span>Age 15+</span>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>G87P, Birmingham</span>
+            </div>
+        </div>
+        <table class="table">
+            <tr>
+                <th>Destination:</th>
+                <td>Maldives</td>
+            </tr>
+            <tr>
+                <th>Departure:</th>
+                <td>Monday</td>
+            </tr>
+            <tr>
+                <th>Departure Time:</th>
+                <td>7:00AM</td>
+            </tr>
+            <tr>
+                <th>Return Time:</th>
+                <td>7:00PM</td>
+            </tr>
+            <tr>
+                <th>Included:</th>
+                <td class="included">
+                    <i class="fas fa-check"></i> Air fares<br>
+                    <i class="fas fa-check"></i> 4 Nights Hotel Accomodation<br>
+                    <i class="fas fa-check"></i> Entrance Fees<br>
+                    <i class="fas fa-check"></i> Tour Guide
+                </td>
+            </tr>
+            <tr>
+                <th>Excluded:</th>
+                <td class="excluded">
+                    <i class="fas fa-times"></i> Air fares
+                </td>
+            </tr>
+        </table>
+
+        <div class="timeline-content">
+            <h2>Tour Plan</h2>
+        <p>Autre irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="timeline-item">
+                <div class="circle">01</div>
+                <div class="time">8:00 am to 10:00 am</div>
+                <div class="time-details">
+                    <h3>Day 1: Arrival</h3>
+                    <!-- <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                    <ul>
+                        <li>Air fares</li>
+                        <li>4 Nights Hotel Accomodation</li>
+                        <li>Entrance Fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">02</div>
+                <div class="time">8:00 am to 10:00 am</div>
+                <div class="time-details">
+                    <h3>Day 2: Visting landmarks and sites </h3>
+                    <!-- <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                    <ul>
+                        <li>Air fares</li>
+                        <li>4 Nights Hotel Accomodation</li>
+                        <li>Entrance Fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="circle">03</div>
+                <div class="time">8:00 am to 10:00 am</div>
+                <div class="time-details" style="border-left: none;">
+                    <h3>Day 3: Trying out local cuisine</h3>
+                    <!-- <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                    <ul>
+                        <li>Air fares</li>
+                        <li>4 Nights Hotel Accomodation</li>
+                        <li>Entrance Fees</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+
+        <!-- <div class="touring">
+            <table>
+                <tr>
+                    <th>Destination:</th>
+                    <td>New York City</td>
+                </tr>
+                <tr>
+                    <th>Departure:</th>
+                    <td>Yes Requard</td>
+                </tr>
+                <tr>
+                    <th>Departure Time:</th>
+                    <td>New York City</td>
+                </tr>
+                <tr>
+                    <th>Return Time:</th>
+                    <td>English & Spanish</td>
+                </tr>
+                <tr>
+                    <th>Included:</th>
+                    <td class="included">
+                        <i class="fas fa-check"></i> Air fares<br>
+                        <i class="fas fa-check"></i> 4 Nights Hotel Accomodation<br>
+                        <i class="fas fa-check"></i> Entrance Fees<br>
+                        <i class="fas fa-check"></i> Tour Guide
+                    </td>
+                </tr>
+                <tr>
+                    <th>Excluded:</th>
+                    <td class="excluded">
+                        <i class="fas fa-times"></i> Air fares
+                    </td>
+                </tr>
+            </table>
+        </div> -->
+
+        <div class="city-loc">
+            <h2>View On Map</h2>
+            <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat duis aute irure dolor.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15933.605175584109!2d72.9897002323497!3d3.2500213209374533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b4715dde8109271%3A0xe6d6cee5ceeb6ee6!2sMaldive%20Islands!5e0!3m2!1sen!2sng!4v1730349064641!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item" onclick="openSlideshow(); currentSlide(1)">
+                <img alt="Person on a swing over water during sunset" src="img/mald1.jpg"/>
+                <div class="overlay"></div>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="gallery-item" onclick="openSlideshow(); currentSlide(2)">
+                <img alt="Hot air balloons over a scenic landscape" src="img/mald2.jpg"/>
+                <div class="overlay"></div>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="gallery-item" onclick="openSlideshow(); currentSlide(3)">
+                <img alt="Couple looking at a map" src="img/mald3.jpg"/>
+                <div class="overlay"></div>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="gallery-item" onclick="openSlideshow(); currentSlide(4)">
+                <img alt="Person kayaking in a cave" src="img/mald4.jpg"/>
+                <div class="overlay"></div>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="gallery-item" onclick="openSlideshow(); currentSlide(5)">
+                <img alt="Scenic mountain landscape" src="img/mald5.jpg"/>
+                <div class="overlay"></div>
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+
+        <div class="rate-content">
+            <div class="rating-section">
+                <div class="rating-box">
+                    <div class="ratings">4.8</div>
+                    <div class="rating-text">
+                        <div class="score">Superb</div>
+                    </div>
+                </div>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <div class="labeling">Accommodation</div>
+                        <div class="bars">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <div class="percentage">70%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="labeling">Transport</div>
+                        <div class="bars">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                        <div class="percentage">80%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="labeling">Comfort</div>
+                        <div class="bars">
+                            <div class="fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="percentage">100%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="labeling">Hospitality</div>
+                        <div class="bars">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                        <div class="percentage">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comments">
+            <h1>Leave Your Comments</h1>
+            <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo consequat duis aute irure dolor.</p>
+            <div class="stars">
+                <div>
+                    <span>Accommodation:</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div>
+                    <span>Transport:</span>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div>
+                    <span>Comfort:</span>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div>
+                    <span>Food:</span>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div>
+                    <span>Hospitality:</span>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="form-group full-width">
+                    <input type="text" placeholder="Phone">
+                </div>
+                <div class="form-group full-width">
+                    <textarea placeholder="Write Message"></textarea>
+                </div>
+                <button class="go-legend">Submit Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="sidebarr">
+          
+        <h3>Downloads</h3>
+        <div class="downloads">
+            <ul>
+                <li>
+                    <a href="#">Travel Direction</a>
+                    <i class="fas fa-download"></i>
+                </li>
+                <li>
+                    <a href="#">Documentation</a>
+                    <i class="fas fa-download"></i>
+                </li>
+                <li>
+                    <a href="#">Logo &amp; Assets</a>
+                    <i class="fas fa-download"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up">
+        </i>
+       </button>
+    <div class="sidebar22">
+
+         <div class="text-layy">
+          Get 25% Off On New York Tours
+         
+        </div>
+    </div>
+ </div> 
+
+ <button class="scroll-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up">
+    </i>
+   </button>
+    
+   <div class="paginationn">
+    <button id="prevBtn" type="button" disabled>❮</button>
+    <span id="pageNumbers"></span> <!-- This will hold the numbered buttons -->
+    <button id="nextBtn" type="button">❯</button>
+</div>
+
+    <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email address...">
+        <button>Subscribe</button>
+    </div>
+
+    <div class="footer">
+        <div class="column">
+          <h3>Drifty Currents</h3>
+          <p>Call Us<br>+234 5362 42365</p>
+          <p>Mail Us<br>hello@Drifty Currents.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="travel.html"><li>Home</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+            <a href="guide.html"><li>Tour Guides</li></a>
+            <a href="booking.html"><li>Booking</li></a>
+            <a href="tours.html"><li>Tours</li></a>
+           </ul>
+        </div>
+        <div class="column" style="border-left: 1px solid white;">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+            <li>Emirates, United Arab Emirates</li>
+            <li>New York City, USA</li>
+            <li>One Bridge, Belgium</li>
+            <li>Golden Frame, Dubai</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Drifty Currents All rights reserved.</p>
+          <div class="terms">
+            <p>Terms of Services</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="slideshowModal" class="slideshow-modal">
+        <span class="close" onclick="closeSlideshow()">&times;</span>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="img/mald1.jpg" />
+            </div>
+            <div class="mySlides">
+                <img src="img/mald2.jpg" />
+            </div>
+            <div class="mySlides">
+                <img src="img/mald3.jpg" />
+            </div>
+            <div class="mySlides">
+                <img src="img/mald4.jpg" />
+            </div>
+            <div class="mySlides">
+                <img src="img/mald5.jpg" />
+            </div>
+            <a class="back" onclick="plusSlides(-1)">❮</a>
+            <a class="front" onclick="plusSlides(1)">❯</a>
+            <button id="playPauseBtn" onclick="toggleSlideshow()">
+                <i class="fas fa-play"></i>
+            </button>
+            <!-- <button class="exit-btn" onclick="closeSlideshow()">Exit</button> -->
+        </div>
+    </div>
+    <script>
+        // Keep track of the current page number
+        let currentPage = 1; 
+    
+        // Define the total number of pages
+        const totalPages = 6; 
+        const pageNumbersContainer = document.getElementById('pageNumbers');
+    
+        // Function to initialize content loading
+        document.addEventListener("DOMContentLoaded", () => {
+            // Set currentPage based on the page being viewed
+            const pageName = window.location.pathname.split('/').pop();
+            currentPage = determineCurrentPage(pageName);
+            
+            // Set up event listeners for the buttons
+            document.getElementById("prevBtn").addEventListener("click", () => changePage(-1));
+            document.getElementById("nextBtn").addEventListener("click", () => changePage(1));
+            
+            // Render page numbers and update button states
+            renderPageNumbers();
+            updateButtonStates();
+        });
+    
+        // Function to determine current page from file name
+        function determineCurrentPage(pageName) {
+            switch (pageName) {
+                case 'santorini.html':
+                    return 1;
+                case 'france.html':
+                    return 2;
+                case 'italy.html':
+                    return 3;
+                case 'bahamas.html':
+                    return 4;
+                case 'maldives.html':
+                    return 5;
+                case 'macchupicchu.html':
+                    return 6;
+                default:
+                    return 1; // Default to the first page
+            }
+        }
+    
+        // Function to handle page navigation
+        function changePage(direction) {
+            currentPage += direction; // Increment or decrement the current page
+            
+            // Ensure currentPage stays within the defined limits
+            if (currentPage < 1) currentPage = totalPages; // Wrap to last page
+            if (currentPage > totalPages) currentPage = 1; // Wrap to first page
+            
+            // Redirect based on page number
+            switch (currentPage) {
+                case 1:
+                    window.location.href = 'santorini.html';
+                    break;
+                case 2:
+                    window.location.href = 'france.html';
+                    break;
+                case 3:
+                    window.location.href = 'italy.html';
+                    break;
+                case 4:
+                    window.location.href = 'bahamas.html';
+                    break;
+                case 5:
+                    window.location.href = 'maldives.html';
+                    break;
+                case 6:
+                    window.location.href = 'macchupicchu.html';
+                    break;
+            }
+            
+            // Update button states after navigation
+            updateButtonStates();
+        }
+    
+        // Function to render page numbers
+        function renderPageNumbers() {
+            pageNumbersContainer.innerHTML = ''; // Clear existing page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                const pageNumber = document.createElement('button'); // Create a button for each page number
+                pageNumber.textContent = i; // Set button text to the page number
+                pageNumber.classList.add('page-number'); // Add a class for styling
+                pageNumber.onclick = () => {
+                    currentPage = i; // Update current page
+                    changePage(0); // Navigate to the selected page
+                };
+                pageNumbersContainer.appendChild(pageNumber); // Append the button to the container
+            }
+            updateActivePage(); // Update active page highlighting
+        }
+    
+        // Function to update the active page button
+        function updateActivePage() {
+            const buttons = pageNumbersContainer.getElementsByClassName('page-number');
+            for (let button of buttons) {
+                button .classList.remove('active'); // Remove active class from all buttons
+            }
+            buttons[currentPage - 1].classList.add('active'); // Highlight the current page button
+        }
+    
+        // Function to update button states based on current page
+        function updateButtonStates() {
+            document.getElementById("prevBtn").disabled = (currentPage === 1);
+            document.getElementById("nextBtn").disabled = (currentPage === totalPages);
+        }
+
+        // Function to hide the loading screen and show the main content
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const mainContent = document.getElementById('mainContent');
+
+    // Forcefully hide the loading screen
+    loadingScreen.style.display = 'none';
+    // Show the main content
+    mainContent.style.display = 'block';
+}
+
+// Simulate loading process
+window.onload = function() {
+    // Use a timeout to simulate loading time
+    setTimeout(hideLoadingScreen, 2000); // Adjust the time as needed
+};
+    </script>
+</body>
+</html>        

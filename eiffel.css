@@ -1,0 +1,652 @@
+.headere {
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.76) , rgba(0, 0, 0, 0.308)), url(/img/eiffel10.jpg) no-repeat center center/cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 900px 1fr; /* Fixed 900px for main-content, flexible for sidebar */
+    grid-template-rows: auto auto auto 1fr; /* Allow rows to grow */
+    align-items: start;
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+.main-content {
+    border-right: gray 1px solid;
+    padding-right: 20px;
+    grid-row: 1 / span 4; /* Occupy both rows */
+}
+.sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-row: 2;
+}
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+ .search-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 15vh;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    grid-row: 1;
+}
+ .search-box input {
+    border: #00bfff 1px solid;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+ .search-box i {
+    color: #00bfff;
+}
+.sidebar .downloads ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar .downloads ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.sidebar .downloads ul li a {
+    text-decoration: none;
+    color: #0d1b2a;
+}
+.sidebar .downloads ul li a:hover {
+    color: #ff6f61;
+}
+.sidebar .downloads ul li i {
+    color: #00bfff;
+}
+.main-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.main-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.image-gallery {
+    display: flex;
+    gap: 10px;
+}
+.image-gallery img {
+    width: 32%;
+    border-radius: 8px;
+    height: auto;
+}
+
+
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+
+
+
+
+
+.latest-news-container {
+    margin-top: 20px; /* Adds space between sidebar and latest news */
+    padding: 20px;
+    background-color: #ffffff; /* Background matches the sidebar */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    grid-row: 3;
+}
+
+.latest-news-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.latest-news {
+    margin-top: 10px; /* Some space between title and news items */
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.news-content h4 {
+    color: #0d1b2a;
+    font-size: 16px;
+    margin: 0;
+}
+
+.news-content p {
+    color: #999;
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+/* .sidebar2 {
+    background-color: #00bfff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    right: 0;
+    top: 80px;
+    width: 300px;
+} */
+.sidebar2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.sidebar2 p {
+    font-size: 16px;
+}
+.sidebar2{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: url('img/sailing\ \(1\).jpg') no-repeat center center;
+    background-size: cover;
+    /* bottom: 20px;
+    right: 20px; */
+    grid-row: 4;
+    border-radius: 10px;
+}
+
+.text-lay{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(97, 210, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* .sidebar2 .side-container .text-lay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(97, 210, 255, 0.7);
+    padding: 20px;
+} */
+
+.country-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.country-content h1 {
+    font-size: 32px;
+    color: #0d1b2a;
+}
+.country-content p {
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.5;
+}
+.details-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.details-table td {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    font-size: 16px;
+}
+.details-table td:first-child {
+    display: flex;
+    align-items: center;
+}
+.details-table i {
+    color: #00bfff;
+    margin-right: 10px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.section-content {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+
+.city-loc {
+    padding: 20px;
+}
+.city-loc h2 {
+    font-size: 28px;
+    color: #0a1f44;
+}
+.city-loc p {
+    font-size: 16px;
+    color: #666;
+}
+.map-container {
+    margin-top: 20px;
+}
+.map-container iframe {
+    width: 750px;
+    height: 400px;
+    border-radius: 25px;
+    border:0;
+}
+
+.comments {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.comments h1 {
+    font-size: 28px;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+.comments p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.form-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.form-group input, .form-group textarea {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.form-group textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #adb5bd;
+}
+.form-group.full-width {
+    width: 100%;
+}
+.form-group.full-width input {
+    width: 100%;
+}
+
+.surf {
+    background-color: #00bfff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+    position: relative;
+    right: 41.5%;
+}
+.form-container button:hover {
+    background-color: #00cfff;
+}
+
+/* .gallery-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.gallery-item i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover i {
+    opacity: 1;
+} */
+
+.slideshow-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 90vh;
+}
+
+.back, .front {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+}
+
+.front {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#playPauseBtn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#playPauseBtn:hover {
+    background-color: #0056b3;
+}
+
+.exit-btn {
+    position: relative;
+    top: 20px; /* Adjust position as needed */
+    right: 20px; /* Adjust position as needed */
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff4c4c; /* Red color for exit */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.exit-btn:hover {
+    background-color: #c10000; /* Darker red on hover */
+}
+
+.close {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #c10000;
+}
+
+
+.gallery {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10px; /* Space between items */
+}
+
+.gallery-item {
+    position: relative; /* Position relative for icon positioning */
+    width: calc(33.333% - 10px); /* Set width for all images */
+    height: 300px; /* Set a fixed height for all images */
+    border-radius: 10px; /* Rounded corners for images */
+    overflow: hidden ;/* Hide overflow */
+    transition: 0.5s ease;
+    box-sizing: border-box;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); 
+}
+
+.gallery-item img {
+    width: 100%; /* Make image fill the container */
+    height: 100%; /* Make image fill the container */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+    border-radius: 10px; /* Rounded corners for images */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.gallery-item:nth-child(4) {
+    width: calc(66.666% - 10px); /* Wider width for the fourth item */
+}
+
+.fas.fa-plus {
+    position: absolute; /* Position the icon on top of the image */
+    bottom: 10px; /* Adjust as necessary */
+    right: 10px; /* Adjust as necessary */
+    color: white; /* Change the color of the icon */
+    font-size: 24px; /* Adjust the size of the icon */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: none; /* Hide the icon by default */
+}
+
+.gallery-item:hover .fas.fa-plus {
+    display: block; /* Show the icon when hovering over the image */
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border-radius: 10px; /* Match border radius */
+    
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF; /* Primary color */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; /* Adds rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background color transition */
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.pagination button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add custom focus effect */
+}
+
+.pagination button.disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed;
+}
+
+.item {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Border for item */
+    border-radius: 5px; /* Adds rounded corners to items */
+    transition: transform 0.2s; /* Smooth transform transition */
+}
+
+/* Optional: Adding hover effect for items */
+.item:hover {
+    transform: scale(1.02); /* Slightly enlarge item on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+/* Optional: Media query for responsive design */
+@media (max-width: 600px) {
+    .pagination button {
+        padding: 8px 12px; /* Adjust padding on smaller screens */
+    }
+
+    .item {
+        padding: 15px; /* Adjust padding for items */
+    }
+}
+
+
+@media (max-width: 400px) {
+   .headere{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.205) , rgba(0, 0, 0, 0.24)), url(/img/eiffel10.jpg); 
+    width: 100%;
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
+    /* Container */
+    .container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Reduce padding */
+        width: 100%
+    }
+
+    .main-content{
+        width: 90%;
+        border-right: none;
+    }
+
+    .map-container iframe{
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .search-box{
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .sidebar {
+        margin-left: 20%;
+    }
+
+    .sidebar2 {
+        width: 95%;
+    }
+
+    .text-lay {
+        width: 89%;
+    }
+
+    .paginationn button {
+        width: 1%;
+        padding-right: 19.5px;
+        
+       
+    }
+
+   
+    
+       }
