@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <a href="blog.html">Blog</a>
-                    <a href="contacts.html">Contacts</a>
+                    <a href="contact.html">Contacts</a>
                 </div>
                 <div class="search-contact">
                     <i class="fas fa-search" style="cursor: pointer;" onclick="toggleInputField()"></i>
@@ -480,25 +480,25 @@
     
     <script src='main.js'></script>
     
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> -->
     <script>
         // Initialize the map centered on Surulere with a zoom level of 15
-        const map = L.map("map").setView([6.4976, 3.3603], 15);
+        // const map = L.map("map").setView([6.4976, 3.3603], 15);
 
-        // Use CartoDB Positron tiles
-        L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-            attribution: '&copy; <a href="https://carto.com/">CARTO</a> contributors',
-            subdomains: "abcd",
-            maxZoom: 19,
-        }).addTo(map);
+        // // Use CartoDB Positron tiles
+        // L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+        //     attribution: '&copy; <a href="https://carto.com/">CARTO</a> contributors',
+        //     subdomains: "abcd",
+        //     maxZoom: 19,
+        // }).addTo(map);
 
-        // Add a marker at the new NIIT Surulere location
-        const niitMarker = L.marker([6.4976, 3.3603])
-            .addTo(map)
-            .bindPopup("<b>NIIT Surulere</b><br>114 Funsho Williams Ave, Lagos");
+        // // Add a marker at the new NIIT Surulere location
+        // const niitMarker = L.marker([6.4976, 3.3603])
+        //     .addTo(map)
+        //     .bindPopup("<b>NIIT Surulere</b><br>114 Funsho Williams Ave, Lagos");
 
-        // Open the popup by default
-        niitMarker.openPopup();
+        // // Open the popup by default
+        // niitMarker.openPopup();
 
     </script>
 </body>
